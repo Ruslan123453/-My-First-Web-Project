@@ -70,10 +70,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  .header-item:first-of-type {
-    flex: 1 1 79%;
-  }
+
   
   .header-item:last-of-type {
     flex: 1 1 21%;
@@ -113,11 +110,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  .main-title {
-    line-height: 42px;
-    font-size: 32px;
-  }
+
 }
 
 
@@ -243,11 +236,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
-  .banner-button-container button {
-    padding: 18px 28px;
-    font-size: 12px;
-  }  
+  
 }
 
 .banner-main-title {
@@ -381,13 +370,6 @@ body {
   justify-content: space-between;
   flex: 1 2 50%;
 }
-
-@media (max-width: 768px) {
-  .head-tickets-2 {
-    display: none;
-  }
-}
-
 
 .main-tickets {
   display: flex;
@@ -718,8 +700,7 @@ body {
      .text_box{
       margin-top: 1%;
       margin-left: 12.5%;
-      width: 50%;
-      max-width: 420px;
+      width: 20%;
       height: 100%;
       background-color: #262626;
       border-radius: 12px;
@@ -735,11 +716,10 @@ body {
   
   } 
    .text_box_button{
-    width: 70%;
+    width: 143px;
     height: 52.40px;
     border: 0px;
     background-color: #FFFFFF;
-    border-radius: 10px;
     font-size: 14px;
     margin-left: 50px;
     margin-bottom: 50px;
@@ -752,10 +732,23 @@ body {
 
 
 
-@media (max-width: 768px) {
-  .head-tickets-2 {
-    display: none;
+
+
+
+  .sold-out {
+    border-radius: 8px;
+    margin-top: 12px;
+    align-self: flex-end;
   }
+
+
+
+  .sold-out {
+    border-radius: 8px;
+    margin-top: 12px;
+    align-self: flex-end;
+  }
+}
 }
 
 
@@ -778,87 +771,291 @@ body {
 
 
 
+  .main-title {
+    font-size: 24px;
+    text-align: center;
+  }
 
+  .main-text-container {
+    text-align: center;
+    padding: 0 10px;
+  }
 
+  .main-button {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
 
+  .banner-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
 
+  .galery {
+    flex-direction: column;
+  }
 
+  .column {
+    width: 100%;
+  }
 
+  .children {
+    margin-bottom: 20px;
+  }
 
+  .hotsauce-block,
+  .hotsauce-block.reverse {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  .image-block img {
+    width: 100%;
+    height: auto;
+  }
 
+  .text-block {
+    padding: 10px;
+  }
 
-/* 
+  .reason,
+  .reason-reverse {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .reason-text1, .reason-text2, .reason-text3 {
+    padding: 0 10px;
+  }
+
+  .imageDigital-pro img,
+  .imageHands-on-learning img,
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .insights-image-block img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .video {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16/9;
+  }
+
+  .video_text.container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .text_box {
+    text-align: center;
+  }
+
+  .text_box_button {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+}
+
 @media (max-width: 768px) {
-  /* Блок с билетами */
-  /* .container-tickets {
-    padding-top: 80px;
-  } */
+  .container {
+    padding: 0 16px;
+  }
 
-  /* .head-tickets {
+  /* HEADER */
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* MAIN */
+  .main {
+    padding: 80px 0;
+    text-align: center;
+  }
+
+  .main-title {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .main-text-container {
+    background-image: none;
+    padding: 0;
+  }
+
+  .main-text {
+    width: 100%;
+  }
+
+  .main-button {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  /* BANNER */
+  .banner-content {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .banner-title-container h2 {
+    font-size: 22px;
+  }
+
+  .banner-button-container button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  /* GALERY */
+  .galery {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+  }
+
+  .column {
+    padding-top: 0 !important;
+  }
+
+  /* TICKETS */
+  .container-tickets {
+    padding-top: 60px;
+  }
+
+  .head-tickets {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-  } */
+  }
 
-  /* .main-tickets {
+  .main-tickets {
     padding-top: 40px;
     padding-bottom: 60px;
-  } */
+  }
 
-  /* .ticket {
+  .ticket {
     flex-direction: column;
     height: auto;
-  } */
+  }
 
-  /* .price, .text-ticket, .ticket-availability {
-    flex: unset;
+  .price, .text-ticket, .ticket-availability {
     width: 100%;
     text-align: center;
     padding: 16px;
-    border: none;
-  } */
+  }
 
-  /* .text-ticket {
+  .text-ticket {
+    border-left: none;
     border-top: 1px solid #eaeaea;
-  } */
+  }
 
-  /* Видео + текст */
-  /* .video_section {
-    padding: 24px 16px;
+  /* HOTSAUCE SECTION */
+  .hotsauce-block {
+    flex-direction: column;
+    padding: 20px;
     height: auto;
-  } */
+  }
 
-  /* .video {
+  .text-block, .image-block {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .text-block h2 {
+    font-size: 28px;
+  }
+
+  .image-block img {
     width: 100%;
     height: auto;
-    aspect-ratio: 16 / 9;
-  } */
+  }
 
-  /* .video_text {
+  /* REASON */
+  .reason, .reason-reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .reason-text1, .reason-text2, .reason-text3 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .imageDigital-pro img,
+  .imageHands-on-learning img,
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* INSIGHTS IMAGE */
+  .insights-image-block {
+    height: auto;
+    padding: 20px;
+  }
+
+  .image-container-1 {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* VIDEO SECTION */
+  .video_section {
+    padding: 24px 16px;
+    height: auto;
+  }
+
+  .video {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+
+  .video_text {
     flex-direction: column;
     padding: 24px 16px;
     gap: 24px;
-  } */
+  }
 
-  /* .video_text_container {
+  .video_text_container {
     width: 100%;
-  } */
+  }
 
-  /* .text_box {
+  .text_box {
     margin: 0 auto;
     width: 100%;
     max-width: 320px;
     padding: 16px;
-  } */
+  }
 
-  /* .text_box_addres {
+  .text_box_addres {
     padding: 20px;
-  } */
+  }
 
-  /* .text_box_button {
-    margin: 0 auto 20px auto;
+  .text_box_button {
     width: 100%;
     max-width: 180px;
+    margin: 0 auto 20px auto;
+    font-size: 16px;
+    padding: 12px;
   }
-} */
+}
