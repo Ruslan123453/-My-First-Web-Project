@@ -498,7 +498,7 @@ body {
 .hotsauce-block {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   height: 972px;
   padding: 324px;
   box-sizing: border-box;
@@ -510,7 +510,7 @@ body {
 
 .text-block-1 {
   width: 676px;
-  height: 478px;
+  /* height: 478px; */
   padding: 20px;
   margin-top: 277.77px;
   color: #FFFFFF
@@ -518,11 +518,24 @@ body {
 }
 .text-block-2 {
   width: 676px;
-  height: 418px;
+  /* height: 418px; */
   padding: 40px;
   color: #FFFFFF;
   margin-top: 155.88px;
   
+}
+
+
+
+@media (max-width: 768px) {
+  .text-block {
+    height: none;
+  }
+}
+@media (max-width: 768px) {
+  .hotsauce-block {
+    padding: none;
+  }
 }
 
 .text-block h2 {
@@ -648,22 +661,59 @@ body {
 }
 
 
-.insights-image-block {
+
+.insights-all {
   background-color: #323232;
-  height: 920px;
   display: flex;
-  justify-content: center;
-
+    justify-content: center;
 }
-.image-container-1 {
- width: calc(100% - 600px); 
-  max-width: 1320px; 
+.insights-image-block {
+  width: 1320px;
+  height: 600.33px;
+  margin: 160px  300px auto;
+  text-align: center;
+  position: relative;
+}
+
+.insights-text {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color:#FFFFFF ;
+}
+
+.insights-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.insights-item {
+  width: 450.67px;
+  height: 424.33px;
+  background-color: transparent;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.insights-item h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #FFFFFF;
+}
+
+.insights-item p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 10px;
+  color: #FFFFFF;
+}
+
+.image-container {
+  max-width: 80px;
   height: auto;
-  display: block;
-  margin-top: 160px;
-  margin-bottom: 160px;
 }
-
 
 
 
@@ -750,11 +800,25 @@ body {
 
 
 
+text_box_button
+
+@media (max-width: 1281px){
+  .hotsauce-section-all {
+    display: table;
+  }
+}
+  1281px
 
 
 @media (max-width: 768px) {
   .head-tickets-2 {
     display: none;
+  }
+}
+
+@media (max-width: 1281px){
+  .hotsauce-block {
+    display: table;
   }
 }
 
@@ -764,101 +828,148 @@ body {
 
 
 
+@media screen and (max-width: 768px) {
+  body, html {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+  }
 
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
 
+  .main-title {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0 10px;
+  }
 
+  .main-text-container {
+    padding: 0 10px;
+  }
 
+  .main-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
 
+  .main-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+  }
 
+  .banner-main-title,
+  .banner-title-container h2 {
+    font-size: 1.4rem;
+    padding: 0 10px;
+  }
 
+  .galery {
+    flex-direction: column;
+    padding: 0 10px;
+  }
 
+  .column {
+    max-width: 100%;
+    width: 100%;
+  }
 
+  .children {
+    padding: 15px;
+    border-radius: 8px;
+    background: #fff;
+    margin-bottom: 15px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-@media (max-width: 768px) {
-  /* Блок с билетами */
-  /* .container-tickets {
-    padding-top: 80px;
-  } */
-
-  /* .head-tickets {
+  .container-tickets .head-tickets {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-  } */
+    gap: 10px;
+  }
 
-  /* .main-tickets {
-    padding-top: 40px;
-    padding-bottom: 60px;
-  } */
-
-  /* .ticket {
+  .main-tickets {
+    display: flex;
     flex-direction: column;
-    height: auto;
-  } */
+    gap: 15px;
+    padding: 0 10px;
+  }
 
-  /* .price, .text-ticket, .ticket-availability {
-    flex: unset;
-    width: 100%;
+  /* .hotsauce-block,
+  .reason,
+  .reason-reverse,
+  .video_text.container {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
     text-align: center;
-    padding: 16px;
-    border: none;
   } */
 
-  /* .text-ticket {
-    border-top: 1px solid #eaeaea;
-  } */
-
-  /* Видео + текст */
-  /* .video_section {
-    padding: 24px 16px;
+  .hotsauce-block img,
+  .reason img,
+  .video_text img {
+    max-width: 100%;
     height: auto;
-  } */
+  }
 
-  /* .video {
+  iframe.video {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
-  } */
+  }
 
-  /* .video_text {
-    flex-direction: column;
-    padding: 24px 16px;
-    gap: 24px;
-  } */
-
-  /* .video_text_container {
+  .video_text_container,
+  .text_box {
     width: 100%;
-  } */
-
-  /* .text_box {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 320px;
-    padding: 16px;
-  } */
-
-  /* .text_box_addres {
-    padding: 20px;
-  } */
+    padding: 0;
+  }
 
   /* .text_box_button {
-    margin: 0 auto 20px auto;
     width: 100%;
-    max-width: 180px;
+    font-size: 1rem;
+    padding: 12px;
+    
+    border: none;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-top: 10px;
+  } */
+
+  address.text_box_addres {
+    font-style: normal;
+    line-height: 1.5;
+  }
+}
+
+
+
+/* @media (max-width: 768px) {
+  .image-block {
+    margin-left: -360px;
   }
 } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
